@@ -16,7 +16,7 @@ const Home = props => {
     return(
         <div>
             <form onSubmit={onSubmitHandler}>
-                <h1>This is the Home Page!</h1>
+                
                 <label htmlFor="reseourceSelect">Search for:</label>
                 <select name="resourceSelect" onChange={e => setInputResouce(e.target.value)}>
                     <option value="People">People</option>

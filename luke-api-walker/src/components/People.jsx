@@ -11,7 +11,7 @@ const People = props => {
         axios.get("https://swapi.dev/api/people/" + id)
             .then(res=>setSearchPeople(res.data))
             .catch(err => console.log(err))
-    }, [])
+    }, [id])
     
     
     return(

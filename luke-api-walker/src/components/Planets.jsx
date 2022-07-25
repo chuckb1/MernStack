@@ -10,7 +10,7 @@ const Planets = props => {
         axios.get("https://swapi.dev/api/planets/" + id)
             .then(res=>setSearchPlanets(res.data))
             .catch(err => console.log(err))
-    }, [])
+    }, [id])
     
     return(
         <div>
